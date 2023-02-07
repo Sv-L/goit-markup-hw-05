@@ -601,8 +601,8 @@ fill:currentColor;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.projects-item:hover .projects-description
+.projects-item:hover .projects-description,
 .projects-item:focus .projects-description{
-  transform: translateX(0);
+  transform: translateY(0);
   opacity: 1;
 }

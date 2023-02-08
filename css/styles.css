@@ -141,6 +141,9 @@ img {
   font-style: normal;
   color: var(--body-text-color);
   letter-spacing: 0.02em;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-navigation {
@@ -250,13 +253,19 @@ border-radius: 4px;
 border: 1px solid var(--box-shaow-project1);
   background: var(--accent-color);
   color: var(--close-icon);
+  cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-close{  
 fill:currentColor;
 }
 
-.btn-modal-close:active{
+.btn-modal-close:active,
+.btn-modal-close:hover,
+.btn-modal-close:focus {
   background-color: var(--pressend-state-color);
   color: var(--prymary-color);
   border-color: transparent;

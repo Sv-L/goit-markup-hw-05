@@ -602,10 +602,8 @@ fill:currentColor;
   letter-spacing: 0.02em;
   color: var(--light-color);
   background-color: var(--primary-brand-color);
-  opacity: 0;
-  
   transform: translateY(100%);
-  transition-property: transform, opacity;
+  transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -613,5 +611,4 @@ fill:currentColor;
 .projects-item:hover .projects-description,
 .projects-item:focus .projects-description{
   transform: translateY(0);
-  opacity: 1;
 }

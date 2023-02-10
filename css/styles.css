@@ -105,10 +105,8 @@ img {
 
 }
 
-.header-link:hover,
-.header-link:focus,
-.address-link:hover,
-.address-link:focus {
+.header-link:is(:hover, :focus),
+.address-link:is(:hover, :focus) {
   color: var(--pressend-state-color);
 }
 
@@ -201,8 +199,7 @@ img {
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.hero-btn:hover,
-.hero-btn:focus {
+.hero-btn:is(:hover, :focus) {
   background-color: var(--pressend-state-color);
 }
 
@@ -256,9 +253,7 @@ border: 1px solid var(--box-shaow-project1);
 fill:currentColor;
 }
 
-.btn-modal-close:active,
-.btn-modal-close:hover,
-.btn-modal-close:focus {
+.btn-modal-close:is(:hover, :focus, :active) {
   background-color: var(--pressend-state-color);
   color: var(--prymary-color);
   border-color: transparent;
@@ -379,8 +374,7 @@ fill:currentColor;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link-social:hover,
-.link-social:focus {
+.link-social:is(:hover, :focus) {
   background-color: var(--pressend-state-color);
 }
 
@@ -417,8 +411,7 @@ fill:currentColor;
   
 }
 
-.link-customers:hover,
-.link-customers:focus {
+.link-customers:is(:hover, :focus) {
   color: var(--pressend-state-color);
   border: 1px solid var(--pressend-state-color);
 }
@@ -476,8 +469,7 @@ fill:currentColor;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-link-social:hover,
-.footer-link-social:focus {
+.footer-link-social:is(:hover, :focus) {
   background-color: var(--green-color);
 }
 
@@ -509,8 +501,7 @@ fill:currentColor;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.projects-btn:hover,
-.projects-btn:focus {
+.projects-btn:is(:hover, :focus) {
   border-color: transparent;
   background-color: var(--pressend-state-color);
   color: var(--prymary-color);
@@ -550,8 +541,7 @@ fill:currentColor;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.projects-link:hover,
-.projects-link:focus {
+.projects-link:is(:hover, :focus) {
   box-shadow: 0 1px 6px var(--box-shadow-team1),
     0 1px 1px var(--box-shadow-team2), 0 2px 1px var(--box-shadow-team1);
 }
@@ -563,8 +553,7 @@ fill:currentColor;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), border-top 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.projects-item-border:hover,
-.projects-item-border:focus {
+.projects-item-border:is(:hover, :focus) {
   border: 0.5px solid var(--light-color);
   border-top: none;
 }
@@ -586,7 +575,6 @@ fill:currentColor;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.projects-item:hover .projects-description,
-.projects-item:focus .projects-description{
+.projects-item:is(:hover, :focus) .projects-description{
   transform: translateY(-100%);
 }

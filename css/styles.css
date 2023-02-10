@@ -559,7 +559,7 @@ fill:currentColor;
 
 .thumb{
   position: relative;
-  /*overflow: hidden;*/
+  overflow: hidden;
 }
 
 .projects-description{
